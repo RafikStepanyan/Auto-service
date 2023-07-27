@@ -1,0 +1,63 @@
+.about {
+  width: 100%;
+  height: 80vh;
+  background: url("../../../public/img/audi.jpg");
+  background-size: cover;
+  background-position: 100% 80%;
+  div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80vh;
+    background: rgba(0, 0, 0, 0.619);
+    padding: 50px;
+    div {
+      width: 480px;
+      display: grid;
+      background: transparent;
+      h1 {
+        font-size: 55px;
+        color: #c12e3a;
+      }
+      p {
+        color: white;
+        font-size: 25px;
+      }
+      ul{
+        height: 300px;
+      }
+      li {
+        list-style: decimal;
+        color: white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:935px){
+  .about>div{
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    div{
+      width: 100%;
+      padding: 0;
+      align-items: center;
+      h1{
+        font-size: 20px;
+      }
+      p{
+        font-size: 18px
+      };
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about {
+    background: url("../../../public/img/mobile.jpg") !important;
+    background-size: cover !important;
+    background-position: bottom !important;
+  }
+}

@@ -1,0 +1,36 @@
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  background: black;
+  div {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 30px;
+    padding: 100px;
+    text-align: center;
+    border: 5px solid #c12e3a;
+    border-radius: 50px;
+    h1 {
+      font-size: 45px;
+      color: #c12e3a;
+    }
+    button {
+        cursor: pointer;
+      width: 100px;
+      background: #c12e3a;
+      padding: 10px;
+      color: black;
+      border: none;
+      border-radius: 10px;
+      font-weight: 700;
+      transition: all 0.5s;
+      &:hover {
+        background: gray;
+      }
+    }
+  }
+}
